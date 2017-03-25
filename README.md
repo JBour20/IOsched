@@ -1,7 +1,11 @@
-# iosched
+### IOSched
 
-To run, type 'make' to produce the executable 'iosched'. My program requires an input file and algorithm specification. Additional tracing information is supported with the '-l' flag. Run as follows:
+To compile:  
 
-./iosched -s\<algo\> [-l] inputfile
+`make`
 
-s/l options can be provided in any order. Valid algorithm specifications include FIFO (i), SSTF (j), SCAN (s), CSCAN (c), and FSCAN (f).
+To run:
+
+`./iosched -s <algorithm> [-l] file`
+
+Use the `-l` flag to output tracing information. Valid algorithm specifications include `i` (FIFO), `j` (SSTF), `s` (SCAN), `c` (CSCAN), and `f` (FSCAN).
